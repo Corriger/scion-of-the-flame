@@ -91,6 +91,7 @@ main {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 3px solid #FF6600;
   border-radius: 50%;
   box-shadow: 0px 0px 5px #FF6600, 0px 5px 30px #FF0000; }
 
@@ -120,10 +121,15 @@ main {
       transition: all 0.5s ease;
       color: #FFFF00;
       text-shadow: 0px 0px 7.5px #FF6600, 0px 0px 15px #FF0000; }
+  .navigation .current {
+    color: #FF0000; }
 
 .content {
   position: absolute;
   display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
@@ -133,10 +139,7 @@ main {
   overflow-y: auto; }
 
 .current {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center; }
+  display: flex; }
   .current h1 {
     text-align: center;
     height: 25%;
@@ -158,6 +161,7 @@ main {
       color: #FFFF00;
       text-shadow: 0px 0px 10px #FFFF00, 0px -5px 20px #FF6600, 0px 10px 20px #FF0000; }
     .current ul p {
+      color: #FFF;
       margin: 7.5px 0 7.5px 30px;
       text-shadow: 0px 0px 10px #000, 0px 0px 15px #330000, 0px 0px 20px #c4c4c4; }
   .current:first-of-type ul {
@@ -178,6 +182,8 @@ main {
       margin: 10px;
       object-fit: contain;
       object-position: center; }
+      .tileset .tile img:hover {
+        border-top: 5px solid #FF0000; }
     .tileset .tile strong,
     .tileset .tile p {
       display: none; }
@@ -187,8 +193,12 @@ main {
   .tileset .highlight strong {
     text-align: center;
     text-transform: capitalize;
-    letter-spacing: 7.5px; }
+    letter-spacing: 7.5px;
+    color: #FFFF00;
+    text-shadow: 0px 0px 10px #FFFF00, 0px -5px 20px #FF6600, 0px 10px 20px #FF0000; }
   .tileset .highlight p {
-    margin: 7.5px 0; }
+    color: #FFF;
+    margin: 7.5px 0;
+    text-shadow: 0px 0px 10px #000, 0px 0px 15px #330000, 0px 0px 20px #c4c4c4; }
 
 /*# sourceMappingURL=style.css.map */
