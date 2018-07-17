@@ -32,7 +32,7 @@ deltaLibrary.forEach(el => {
     if (el.classList.contains("highlight")) {
       el.classList.remove("highlight")
     } else {
-      library.forEach(ele => {
+      deltaLibrary.forEach(ele => {
         ele.classList.remove("highlight")
       })
       el.classList.add("highlight")
