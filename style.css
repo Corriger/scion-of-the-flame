@@ -166,9 +166,7 @@ main {
 .tileset {
   flex-flow: row;
   justify-content: space-between;
-  align-items: flex-start;
-  height: calc(100% - 20px);
-  width: 95%; }
+  align-items: flex-start; }
   .tileset .tile {
     width: 50%;
     height: 100%;
