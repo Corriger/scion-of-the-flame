@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5 {
   text-shadow: 0px 5px 20px #FF0000, 0px 0px 10px #FFFF00, 0px -10px 20px #FF6600; }
 
 strong, em, p, span {
-  font-size: 10px;
   font-family: "Times New Roman", serif;
   line-height: 1.2; }
 
@@ -132,58 +131,45 @@ a:active {
     .smash-content .moves .current {
       display: block;
       background: rgba(0, 0, 0, 0.7); }
-    .smash-content .moves #a {
-      font-size: 12px; }
-      .smash-content .moves #a strong {
-        display: block;
-        color: lime; }
-      .smash-content .moves #a span {
-        display: block; }
-      .smash-content .moves #a p {
-        font-size: 8px;
-        margin: 7.5px;
-        color: white; }
-    .smash-content .moves #z {
-      font-size: 12px; }
-      .smash-content .moves #z strong {
-        display: block;
-        color: blue; }
-      .smash-content .moves #z span {
-        display: block; }
-      .smash-content .moves #z p {
-        font-size: 8px;
-        margin: 7.5px;
-        color: white; }
-    .smash-content .moves #b {
-      font-size: 12px; }
-      .smash-content .moves #b strong {
-        display: block;
-        color: red; }
-      .smash-content .moves #b span {
-        display: block; }
-      .smash-content .moves #b p {
-        font-size: 8px;
-        margin: 7.5px;
-        color: white; }
-    .smash-content .moves #ex {
-      font-size: 12px; }
-      .smash-content .moves #ex em {
-        display: block;
-        color: #FFFF00;
-        text-align: center;
-        font-size: 8px;
-        text-shadow: 0px 0px 10px #FFFF00, 0px -5px 20px #FF6600, 0px 10px 20px #FF0000; }
-      .smash-content .moves #ex strong {
-        display: block;
-        color: red;
-        text-shadow: 0px 0px 10px #FFFF00, 0px -5px 20px #FF6600, 0px 10px 20px #FF0000; }
-      .smash-content .moves #ex span {
-        display: block; }
-      .smash-content .moves #ex p {
-        font-size: 8px;
-        margin: 7.5px;
-        color: lightgrey;
-        text-shadow: 0px 0px 10px #000, 0px 0px 15px #330000, 0px 0px 20px #c4c4c4; }
+    .smash-content .moves #a strong {
+      display: block;
+      color: lime; }
+    .smash-content .moves #a span {
+      display: block; }
+    .smash-content .moves #a p {
+      margin: 7.5px;
+      color: white; }
+    .smash-content .moves #z strong {
+      display: block;
+      color: blue; }
+    .smash-content .moves #z span {
+      display: block; }
+    .smash-content .moves #z p {
+      margin: 7.5px;
+      color: white; }
+    .smash-content .moves #b strong {
+      display: block;
+      color: red; }
+    .smash-content .moves #b span {
+      display: block; }
+    .smash-content .moves #b p {
+      margin: 7.5px;
+      color: white; }
+    .smash-content .moves #ex em {
+      display: block;
+      color: #FFFF00;
+      text-align: center;
+      text-shadow: 0px 0px 10px #FFFF00, 0px -5px 20px #FF6600, 0px 10px 20px #FF0000; }
+    .smash-content .moves #ex strong {
+      display: block;
+      color: red;
+      text-shadow: 0px 0px 10px #FFFF00, 0px -5px 20px #FF6600, 0px 10px 20px #FF0000; }
+    .smash-content .moves #ex span {
+      display: block; }
+    .smash-content .moves #ex p {
+      margin: 7.5px;
+      color: lightgrey;
+      text-shadow: 0px 0px 10px #000, 0px 0px 15px #330000, 0px 0px 20px #c4c4c4; }
     .smash-content .moves #smash {
       width: 100%; }
       .smash-content .moves #smash h2 {
@@ -203,7 +189,7 @@ a:active {
     .smash-content .moves #SDM {
       width: 100%; }
       .smash-content .moves #SDM h2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         text-align: center; }
       .smash-content .moves #SDM a:link,
       .smash-content .moves #SDM a:visited,
