@@ -1,0 +1,222 @@
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-size: 14px;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100vh;
+  overflow-y: hidden; }
+
+body {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/22/Animated_fire_by_nevit.gif);
+  background-position: center;
+  background-size: 105% 105%;
+  background-repeat: no-repeat; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  color: #FFFF00;
+  font-size: 3em;
+  font-style: italic;
+  text-shadow: 0px 5px 20px #FF0000, 0px 0px 10px #FFFF00, 0px -10px 20px #FF6600; }
+
+strong, em, p, span {
+  font-size: 10px;
+  font-family: "Times New Roman", serif;
+  line-height: 1.2; }
+
+ul {
+  list-style: none; }
+
+a:visited,
+a:link,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit; }
+
+#smash-banner {
+  float: left;
+  width: 50%; }
+  #smash-banner #smash-image {
+    width: 100%; }
+  #smash-banner #banner-text {
+    top: -60px;
+    margin: 7.5px; }
+    #smash-banner #banner-text h1 {
+      text-align: right; }
+
+.smash-content {
+  display: flex;
+  flex-flow: row wrap;
+  width: calc(50% - 5px);
+  height: calc(100% - 15px);
+  margin: 7.5px;
+  border-radius: 5%;
+  border: 10px double #FF6600;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.8); }
+  .smash-content .colors {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 15%;
+    overflow-y: hidden; }
+    .smash-content .colors img {
+      width: calc(100%/7);
+      justify-content: space-between; }
+  .smash-content .navigation {
+    float: left;
+    margin: 0 0 0 7.5px;
+    width: calc(20% - 3.25px); }
+    .smash-content .navigation li {
+      font-family: "Arial";
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.5);
+      margin: 15px 0;
+      font-weight: bold;
+      transition: all 0.5s ease; }
+    .smash-content .navigation .aButton {
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: green;
+      padding: 5px 7.5px;
+      border-radius: 50%;
+      box-shadow: inset 0px -3px 3px darkgreen; }
+    .smash-content .navigation .bButton {
+      width: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: red;
+      padding: 1px 3.75px;
+      border-radius: 50%;
+      box-shadow: inset 0px -1px 3px darkred; }
+    .smash-content .navigation .zButton {
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: blue;
+      padding: 1px 15px;
+      border-radius: 5%;
+      box-shadow: inset 0px -1px 3px darkblue; }
+    .smash-content .navigation .exMoves,
+    .smash-content .navigation .finalSmash {
+      width: 30px; }
+      .smash-content .navigation .exMoves img,
+      .smash-content .navigation .finalSmash img {
+        width: 100%; }
+  .smash-content .moves {
+    width: calc(80% - 15px);
+    height: 75%;
+    background-image: url(https://i.imgur.com/SC3Ds0V.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .smash-content .moves .movelist {
+      position: absolute;
+      display: none;
+      width: 100%;
+      height: 100%;
+      padding: 7.5px;
+      overflow-y: auto; }
+    .smash-content .moves .current {
+      display: block;
+      background: rgba(0, 0, 0, 0.7); }
+    .smash-content .moves #a {
+      font-size: 12px; }
+      .smash-content .moves #a strong {
+        display: block;
+        color: lime; }
+      .smash-content .moves #a span {
+        display: block; }
+      .smash-content .moves #a p {
+        font-size: 8px;
+        margin: 7.5px;
+        color: white; }
+    .smash-content .moves #z {
+      font-size: 12px; }
+      .smash-content .moves #z strong {
+        display: block;
+        color: blue; }
+      .smash-content .moves #z span {
+        display: block; }
+      .smash-content .moves #z p {
+        font-size: 8px;
+        margin: 7.5px;
+        color: white; }
+    .smash-content .moves #b {
+      font-size: 12px; }
+      .smash-content .moves #b strong {
+        display: block;
+        color: red; }
+      .smash-content .moves #b span {
+        display: block; }
+      .smash-content .moves #b p {
+        font-size: 8px;
+        margin: 7.5px;
+        color: white; }
+    .smash-content .moves #ex {
+      font-size: 12px; }
+      .smash-content .moves #ex em {
+        display: block;
+        color: #FFFF00;
+        text-align: center;
+        font-size: 8px;
+        text-shadow: 0px 0px 10px #FFFF00, 0px -5px 20px #FF6600, 0px 10px 20px #FF0000; }
+      .smash-content .moves #ex strong {
+        display: block;
+        color: red;
+        text-shadow: 0px 0px 10px #FFFF00, 0px -5px 20px #FF6600, 0px 10px 20px #FF0000; }
+      .smash-content .moves #ex span {
+        display: block; }
+      .smash-content .moves #ex p {
+        font-size: 8px;
+        margin: 7.5px;
+        color: lightgrey;
+        text-shadow: 0px 0px 10px #000, 0px 0px 15px #330000, 0px 0px 20px #c4c4c4; }
+    .smash-content .moves #smash {
+      width: 100%; }
+      .smash-content .moves #smash h2 {
+        font-size: 2rem;
+        text-align: center; }
+      .smash-content .moves #smash img {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+        border-radius: 10%;
+        box-shadow: 0px 0px 15px orange; }
+      .smash-content .moves #smash p {
+        margin: 10px auto;
+        text-align: center;
+        color: #FFF;
+        text-shadow: 1px 1px 3px black, 0px 0px 5px red; }
+    .smash-content .moves #SDM {
+      width: 100%; }
+      .smash-content .moves #SDM h2 {
+        font-size: 1.5rem;
+        text-align: center; }
+      .smash-content .moves #SDM a:link,
+      .smash-content .moves #SDM a:visited,
+      .smash-content .moves #SDM a:active {
+        font-style: normal;
+        font-family: monospace;
+        color: #330000; }
+      .smash-content .moves #SDM a:hover {
+        color: #FF0000; }
+      .smash-content .moves #SDM p {
+        margin: 10px auto;
+        text-align: center;
+        color: #FF0000;
+        text-shadow: 1px 1px 3px black, 0px 0px 5px red; }
+
+/*# sourceMappingURL=smash.css.map */
